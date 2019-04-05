@@ -88,8 +88,9 @@ pertaining to URI options apply here.
    * - authMechanism
      - any string; valid values are defined in the `auth spec 
        <https://github.com/mongodb/specifications/blob/master/source/auth/auth.rst#supported-authentication-methods>`_
-     - defined in `auth spec 
-       <https://github.com/mongodb/specifications/blob/master/source/auth/auth.rst#supported-authentication-methods>`_
+     - None; default values for authentication exist for constructing authentication credentials per the
+       `auth spec <https://github.com/mongodb/specifications/blob/master/source/auth/auth.rst#supported-authentication-methods>`_,
+       but must not be assigned here to distinguish between values specified by the user and defaulted by the implementation.
      - no
      - The authentication mechanism method to use for connection to the
        server
@@ -102,9 +103,9 @@ pertaining to URI options apply here.
 
    * - authSource
      - any string
-     - If the auth mechanism is PLAIN, GSSAPI, or MONGODB-X509, the default value is "$external"
-
-       Otherwise, the value should fall back on the database specified in the URI, or "admin" if it is not specified
+     - None; default values for authentication exist for constructing authentication credentials per the
+       `auth spec <https://github.com/mongodb/specifications/blob/master/source/auth/auth.rst#supported-authentication-methods>`_,
+       but must not be assigned here to distinguish between values specified by the user and defaulted by the implementation.
      - no
      - The database that connections should authenticate against
 

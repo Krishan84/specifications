@@ -131,6 +131,8 @@ The database to authenticate against. If provided it is everything after the Hos
 
 The following characters MUST NOT appear in the database name, once it has been decoded: slash ("/"), backslash ("\\"), space (" "), double-quote ("""), or dollar sign ("$"). The MongoDB Manual `says that <https://docs.mongodb.com/manual/reference/limits/#Restrictions-on-Field-Names>`_ period (".") is also prohibited, but drivers MAY allow periods in order to express a namespace (database and collection name, perhaps containing multiple periods) in this part of the URL.
 
+The presence of the auth database component without other credential data such as Userinfo or authentication parameters in connection options MUST NOT be interpreted as a request for authentication.
+
 -----------------------------
 Connection Options (optional)
 -----------------------------

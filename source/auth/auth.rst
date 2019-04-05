@@ -87,6 +87,14 @@ mechanism (string)
 mechanism_properties
 	* Includes additional properties for the given mechanism.
 
+Ambiguity between authentication source and URI database
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The presence of a database name in the URI connection string MUST NOT be
+interpreted as a user configuring authentication credentials.  The URI database
+name is only used as a default source for some mechanisms when authentication
+has been configured and a source is required but has not been specified.  See
+individual mechanism definitions for details.
 
 Errors
 ~~~~~~
