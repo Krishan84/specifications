@@ -11,8 +11,8 @@ Connection String Spec
 :Advisors: \A. Jesse Jiryu Davis, Jeremy Mikola, Anna Herlihy
 :Status: Approved
 :Type: Standards
-:Last Modified: March 4, 2019
-:Version: 1.4.1
+:Last Modified: 2019-04-16
+:Version: 1.4.2
 
 .. contents::
 
@@ -389,3 +389,4 @@ Changes
 - 2019-02-04: In Repeated Keys section, clarified that the URI options spec may
   override the repeated key behavior described here for certain options.
 - 2019-03-04: Require drivers to document option precedence rules
+- 2019-04-16: Database name in URI alone does not trigger authentication

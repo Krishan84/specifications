@@ -3,7 +3,7 @@ URI Options Specification
 =========================
 
 :Spec Title: URI Options Specification
-:Spec Version: 1.3
+:Spec Version: 1.3.1
 :Author: Sam Rossi
 :Spec Lead: Bernie Hackett
 :Advisory Group: Scott L'Hommedieu
@@ -11,7 +11,7 @@ URI Options Specification
 :Informed: drivers@
 :Status: Accepted (Could be Draft, Accepted, Rejected, Final, or Replaced)
 :Type: Standards
-:Last Modified: 07-December-2018
+:Last Modified: 2019-04-16
 
 
 **Abstract**
@@ -388,3 +388,4 @@ Changes
 
 - 2019-01-25 Updated to reflect new Connection Monitoring and Pooling Spec
 - 2019-02-04 Specified errors for conflicting TLS-related URI options
+- 2019-04-16 authSource and authMechanism have no default value

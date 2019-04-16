@@ -6,14 +6,14 @@ Driver Authentication
 =====================
 
 :Spec: 100
-:Spec Version: 1.7.1
+:Spec Version: 1.7.2
 :Title: Driver Authentication
 :Author: Craig Wilson, David Golden
 :Advisors: Andy Schwerin, Bernie Hacket, Jeff Yemin, David Golden
 :Status: Accepted
 :Type: Standards
 :Minimum Server Version: 2.6
-:Last Modified: 2018-04-17
+:Last Modified: 2019-04-16
 
 .. contents::
 
@@ -885,6 +885,10 @@ Q: Why does SCRAM sometimes SASLprep and sometimes not?
 
 Version History
 ===============
+
+Version 1.7.2 Changes
+    * Clarify that database name in URI is not treated as a user configuring
+      auth credentials.
 
 Version 1.7.1 Changes
     * Unknown users don't cause ismaster errors. This was changed before
