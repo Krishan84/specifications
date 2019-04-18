@@ -90,7 +90,7 @@ pertaining to URI options apply here.
        <https://github.com/mongodb/specifications/blob/master/source/auth/auth.rst#supported-authentication-methods>`_
      - None; default values for authentication exist for constructing authentication credentials per the
        `auth spec <https://github.com/mongodb/specifications/blob/master/source/auth/auth.rst#supported-authentication-methods>`_,
-       but must not be assigned here to distinguish between values specified by the user and defaulted by the implementation.
+       but there is no default for the URI option itself.
      - no
      - The authentication mechanism method to use for connection to the
        server
@@ -105,7 +105,7 @@ pertaining to URI options apply here.
      - any string
      - None; default values for authentication exist for constructing authentication credentials per the
        `auth spec <https://github.com/mongodb/specifications/blob/master/source/auth/auth.rst#supported-authentication-methods>`_,
-       but must not be assigned here to distinguish between values specified by the user and defaulted by the implementation.
+       but there is no default for the URI option itself.
      - no
      - The database that connections should authenticate against
 
