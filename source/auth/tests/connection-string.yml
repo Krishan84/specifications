@@ -313,3 +313,21 @@ tests:
         valid: false
         credential_configured: ~
         credential: ~
+    -
+        description: "URI with no auth-related info doesn't create credential"
+        uri: "mongosource://localhost/"
+        valid: true
+        credential_configured: false
+        credential: ~
+    -
+        description: "database in URI path doesn't create credentials"
+        uri: "mongosource://localhost/foo"
+        valid: true
+        credential_configured: false
+        credential: ~
+    -
+        description: "authSource without username is invalid (default mechanism)"
+        uri: "mongosource://localhost/?authSource=foo"
+        valid: false
+        credential_configured: ~
+        credential: ~

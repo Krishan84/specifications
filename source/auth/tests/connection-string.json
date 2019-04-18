@@ -370,6 +370,27 @@
       "valid": false,
       "credential_configured": null,
       "credential": null
+    },
+    {
+      "description": "URI with no auth-related info doesn't create credential",
+      "uri": "mongosource://localhost/",
+      "valid": true,
+      "credential_configured": false,
+      "credential": null
+    },
+    {
+      "description": "database in URI path doesn't create credentials",
+      "uri": "mongosource://localhost/foo",
+      "valid": true,
+      "credential_configured": false,
+      "credential": null
+    },
+    {
+      "description": "authSource without username is invalid (default mechanism)",
+      "uri": "mongosource://localhost/?authSource=foo",
+      "valid": false,
+      "credential_configured": null,
+      "credential": null
     }
   ]
 }
