@@ -6,7 +6,7 @@ Driver Authentication
 =====================
 
 :Spec: 100
-:Spec Version: 1.7.2
+:Spec Version: 1.8.0
 :Title: Driver Authentication
 :Author: Craig Wilson, David Golden
 :Advisors: Andy Schwerin, Bernie Hacket, Jeff Yemin, David Golden
@@ -885,6 +885,9 @@ Q: Why does SCRAM sometimes SASLprep and sometimes not?
 
 Version History
 ===============
+
+Version 1.8.0 Changes
+    * Test format changed to improve specificity of behavior assertions.
 
 Version 1.7.2 Changes
     * Clarify that database name in URI is not treated as a user configuring
